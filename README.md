@@ -1,5 +1,5 @@
-Here we have list of all projects:
-
+## Here we have list of all projects:
+---
 01. Pixel Art Generator
 02. Rich Text Editor
 03. Password Generator
