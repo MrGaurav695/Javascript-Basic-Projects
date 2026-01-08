@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Day #8 - Movie Web</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Movie Web</h1>
+
+    <form id="form">
+      <input type="text" id="search" class="search" placeholder="Search Movie..." />
+    </form>
+  </header>
+
+  <main id="main"></main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeBtn" class="close">&times;</span>
+
+      <img id="modal-img" src="" alt="Movie Poster" />
+      <h2 id="modal-title"></h2>
+      <p><strong>Rating:</strong> <span id="modal-rating"></span></p>
+      <p><strong>Release:</strong> <span id="modal-date"></span></p>
+      <p><strong>Cast:</strong> <span id="modal-cast"></span></p>
+
+      <h3>Overview</h3>
+      <p id="modal-overview"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Code By Gaurav Shirsath 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
