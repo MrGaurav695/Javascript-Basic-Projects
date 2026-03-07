@@ -32,4 +32,5 @@ Here we have list of projects:
 28. Github Api
 29. Breakout Game
 30. Music Player App
-31. Google Maps Api
+31. Google Maps App
+32. Pong Game
