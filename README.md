@@ -34,3 +34,4 @@ Here we have list of projects:
 30. Music Player App
 31. Google Maps App
 32. Pong Game
+33. Chrome Color Picker Extension
