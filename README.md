@@ -35,3 +35,5 @@ Here we have list of projects:
 31. Google Maps App
 32. Pong Game
 33. Chrome Color Picker Extension
+34. Stock Tracker App
+    
