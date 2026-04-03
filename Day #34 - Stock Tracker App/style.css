@@ -1,0 +1,180 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Animation */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #0f172a, #1e293b, #0f172a);
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass Container */
+.container {
+    width: 460px;
+    padding: 25px;
+    border-radius: 18px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #fff;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Form */
+form {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+/* Input */
+form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    transition: 0.3s;
+}
+
+form input::placeholder {
+    color: #ccc;
+}
+
+/* Input focus glow */
+form input:focus {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Button */
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+/* Stock List */
+#stock-list {
+    list-style: none;
+}
+
+/* Stock Item */
+#stock-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+    animation: slideUp 0.5s ease;
+}
+
+/* Slide animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+#stock-list li:hover {
+    transform: translateX(5px) scale(1.02);
+    background: rgba(255,255,255,0.15);
+}
+
+/* Symbol text */
+.symbol {
+    font-weight: 600;
+}
+
+/* Change text */
+.change {
+    font-weight: 500;
+}
+
+/* Positive */
+.green {
+    color: #22c55e;
+}
+
+/* Negative */
+.red {
+    color: #ef4444;
+}
+
+/* Error message */
+li.error {
+    text-align: center;
+    color: #ff6b6b;
+    font-weight: 500;
+}
+
+/* Loading animation */
+li.loading {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
