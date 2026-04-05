@@ -37,4 +37,5 @@ Here we have list of projects:
 33. Chrome Color Picker Extension
 34. Stock Tracker App
 35. Shadow Generator
+36. Movie App
     
