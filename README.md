@@ -38,4 +38,5 @@ Here we have list of projects:
 34. Stock Tracker App
 35. Shadow Generator
 36. Movie App
+37. Tradingview Widget
     
