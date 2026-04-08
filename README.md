@@ -40,4 +40,5 @@ Here we have list of projects:
 36. Movie App
 37. Tradingview Widget
 38. Currency Converter
+39. Parallex Slider
     
