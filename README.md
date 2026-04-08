@@ -41,4 +41,5 @@ Here we have list of projects:
 37. Tradingview Widget
 38. Currency Converter
 39. Parallex Slider
+40. Minimal Weather App
     
