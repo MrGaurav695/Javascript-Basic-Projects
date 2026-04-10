@@ -43,4 +43,5 @@ Here we have list of projects:
 39. Parallex Slider
 40. Minimal Weather App
 41. Sudoku Solver
+42. Ai Image Generator
     
