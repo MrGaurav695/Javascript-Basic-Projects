@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff6b6b;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #ff4757;
+}
+
+/* GRID */
+.meal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* CARD */
+.meal-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.meal-item:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.meal-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.meal-item h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+/* MODAL */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: #fff;
+    color: #000;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    padding: 20px;
+    display: none;
+    transition: 0.3s;
+}
+
+.modal.active {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay.active {
+    display: block;
+}
+
+.close-btn {
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+}
+
+.recipe-img img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
