@@ -44,4 +44,5 @@ Here we have list of projects:
 40. Minimal Weather App
 41. Sudoku Solver
 42. Ai Image Generator
+43. Chess Game
     
