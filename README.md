@@ -46,4 +46,5 @@ Here we have list of projects:
 42. Ai Image Generator
 43. Chess Game
 44. Food Recipe App
+45. Email Sender App
     
