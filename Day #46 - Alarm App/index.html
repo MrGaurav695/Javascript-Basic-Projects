@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Alarm App</h1>
+            <p class="subtitle">Set alarms and get notified when time is up.</p>
+        </header>
+
+        <div class="clock-panel">
+            <div class="current-time" aria-live="polite">00:00:00</div>
+            <div class="status-text">No alarms set</div>
+        </div>
+
+        <form id="alarm-form" class="alarm-form" autocomplete="off">
+            <label class="field">
+                <span>Hour</span>
+                <input type="number" id="hour-input" placeholder="HH" min="1" max="12" required>
+            </label>
+            <label class="field">
+                <span>Minute</span>
+                <input type="number" id="minute-input" placeholder="MM" min="0" max="59" required>
+            </label>
+            <label class="field">
+                <span>AM / PM</span>
+                <select id="period-select" required>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </label>
+            <div class="buttons">
+                <button type="submit" id="set-alarm">Set Alarm</button>
+                <button type="button" id="clear-alarms" class="clear">Clear All</button>
+            </div>
+        </form>
+
+        <section class="alarms-section">
+            <h2>Upcoming alarms</h2>
+            <div class="alarms-list" aria-live="polite"></div>
+        </section>
+
+        <button id="stop-alarm" class="stop hidden">Stop Alarm</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
