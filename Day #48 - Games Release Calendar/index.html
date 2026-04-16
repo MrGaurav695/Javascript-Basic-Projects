@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Release Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎮 Games Release Calendar</h1>
+            <p>Stay updated with upcoming video game releases</p>
+        </header>
+
+        <div class="controls">
+            <button id="prevMonth" aria-label="Previous month">Prev</button>
+            <span id="currentMonthYear"></span>
+            <button id="nextMonth" aria-label="Next month">Next</button>
+        </div>
+
+        <div id="calendar" role="grid" aria-label="Calendar"></div>
+    </div>
+
+    <!-- Game Details Modal -->
+    <div id="gameModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="gameTitle">
+        <div class="modal-content">
+            <span class="close" aria-label="Close modal">&times;</span>
+            <img src="" id="gameImage" alt="Game screenshot">
+            <div class="modal-body">
+                <h2 id="gameTitle"></h2>
+                
+                <div class="game-info">
+                    <div class="info-item">
+                        <label>Release Date</label>
+                        <span id="gameReleaseDate">-</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Rating</label>
+                        <span id="gameRating">-</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Platforms</label>
+                        <span id="gamePlatforms">-</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Genres</label>
+                        <span id="gameGenres">-</span>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <label>Description</label>
+                    <p id="gameDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
