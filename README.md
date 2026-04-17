@@ -50,4 +50,5 @@ Here we have list of projects:
 46. Alarm App
 47. Image Color Picker
 48. Games Release Calendar
+49. Wikipedia Searcher
     
