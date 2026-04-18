@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Day #78 - Google Gemini Clone</title>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <h3 class="navbar__logo">Gemini</h3>
+        <button class="navbar__button" id="themeToggler" aria-label="Toggle theme"><i class='bx bx-sun'></i></button>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+            <h1>Hello, There!</h1>
+            <h2>How can I help you today?</h2>
+        </div>
+        <div class="suggests">
+            <div class="suggests__item" role="button" tabindex="0" aria-label="Give tips on helping kids finish their homework on time">
+                <p class="suggests__item-text">
+                    Give tips on helping kids finish their homework on time
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-stopwatch' aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="suggests__item" role="button" tabindex="0" aria-label="Help me write an out-of-office email">
+                <p class="suggests__item-text">
+                    Help me write an out-of-office email
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-edit-alt' aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="suggests__item" role="button" tabindex="0" aria-label="Give me phrases to learn a new language">
+                <p class="suggests__item-text">
+                    Give me phrases to learn a new language
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-compass' aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="suggests__item" role="button" tabindex="0" aria-label="Show me how to build something by hand">
+                <p class="suggests__item-text">
+                    Show me how to build something by hand
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-wrench' aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chats" role="log" aria-live="polite" aria-label="Chat history"></section>
+
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" 
+                       placeholder="Enter a prompt here" 
+                       class="prompt__form-input" 
+                       required
+                       aria-label="Enter your prompt"
+                       aria-describedby="disclaim">
+                <button class="prompt__form-button" id="sendButton" aria-label="Send message">
+                    <i class='bx bx-send' aria-hidden="true"></i>
+                </button>
+                <button class="prompt__form-button" id="deleteButton" aria-label="Clear chat history">
+                    <i class='bx bx-trash' aria-hidden="true"></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim" id="disclaim">
+            Gemini may display inaccurate info, including about people, so double-check its responses.
+        </p>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
